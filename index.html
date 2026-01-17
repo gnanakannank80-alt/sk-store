@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛒 SK Grocery Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://th.bing.com/th/id/OIP.pyVWqD3IgsSv-MgZx4ezawHaD4?w=314&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo"> <h1>🏪 SK GROCERY STORE</h1>
+</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="cart-icon">
+    🛒 <span id="cart-count">0</span> | Total: ₹<span id="cart-total">0</span>
+</div>
+
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <h1>Welcome to 🛒 SK Grocery Store</h1>
+        <h2>Fresh • Quality • Trust</h2><br>
+        <h3>“உங்கள் வீட்டின் நம்பகமான மளிகை கடை”</h3><br>
+        <p>SK Grocery Store என்பது உங்கள் குடும்பத்திற்கு தேவையான அனைத்து மளிகை பொருட்களையும் ஒரே இடத்தில் வழங்கும் நம்பகமான கடையாகும்.
+இங்கே கிடைக்கும்</p>
+        
+        <a href="#menu" class="btn">எங்களிடம் கிடைப்பவை</a>
+    </section>
+    
+
+    <!-- MENU SECTION -->
+    <section id="menu" class="menu">
+        <h2>🧺 Our Products (எங்கள் பொருட்கள்)</h2>
+        <p>SK Grocery Store என்பது உங்கள் குடும்பத்திற்கு தேவையான அனைத்து மளிகை பொருட்களையும் ஒரே இடத்தில் வழங்கும் நம்பகமான கடையாகும்.
+இங்கே கிடைக்கும் அனைத்து பொருட்களும் தினமும் தேர்வு செய்யப்பட்ட புதிய மற்றும் தரமான பொருட்களாகும்.
+</p>
+        <div class="filters">
+            <button onclick="filterMenu('all')">எங்களிடம் கிடைப்பவை</button>
+            <button onclick="filterMenu('breakfast')">🌾 அரிசி வகைகள்</button>
+            <button onclick="filterMenu('lunch')">🥬 காய்கறிகள் & பழங்கள்</button>
+            <button onclick="filterMenu('snacks')">🫘 பருப்பு & தானியங்கள்</button>
+            <button onclick="filterMenu('dessert')">🌶️ மசாலா & சுவையூட்டிகள்</button>
+        </div>
+        <div class="menu-items" id="menu-items">
+            <!-- Menu items will be injected by JS -->
+        </div>
+    </section>
+    
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <h2>📖 About Us (எங்களை பற்றி)
+</h2>
+        <p>SK Grocery Store பல ஆண்டுகளாக வாடிக்கையாளர்களின் நம்பிக்கையுடன் செயல்பட்டு வருகிறது.
+எங்கள் கடை தரம் மற்றும் தூய்மைக்கு மிகுந்த முக்கியத்துவம் அளிக்கிறது.
+ஒவ்வொரு பொருளும் வாடிக்கையாளர்களிடம் செல்லும் முன் கவனமாக சோதிக்கப்படுகிறது.
+வாடிக்கையாளர் திருப்தி இல்லாமல் எங்கள் சேவை முழுமை அடையாது என்பதே எங்கள் நம்பிக்கை.😊
+</p>
+        <img src="https://th.bing.com/th?q=People+Shopping+in+Grocery+Store&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.3&pid=InlineBlock&rm=3&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" alt="வீட்டு பயன்பாட்டு">
+    </section>
+<section id="about" class="about">
+
+   <h2>⭐ Why Choose Us (எங்களை ஏன் தேர்வு செய்ய வேண்டும்)</h2>
+
+<p>✔ தரமான & புதிய பொருட்கள்<br>
+
+✔ நியாயமான விலை<br>
+
+✔ நல்ல வாடிக்கையாளர் சேவை<br>
+
+✔ நம்பகமான கடை</p>
+</section>
+    <!-- ORDER SECTION -->
+    <section id="order" class="order">
+        <h2>🚚 Place Your Order</h2>
+        <form id="order-form">
+            <input type="text" placeholder="Enter your Name" id="name" required>
+            <input type="tel" placeholder="Enter your Phone" id="phone" required>
+            <input type="number" placeholder="Total amount" id="total" required>
+            <input type="text" placeholder="Enter your Feedbacks" id="feedback" required >
+            <textarea placeholder="Order Details" id="details" required></textarea>
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
+    
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <h2>📞 Contact Us (தொடர்பு கொள்ள)</h2>
+
+<p>எங்கள் கடையை நேரில் வந்து பார்வையிடலாம் அல்லது எங்களை தொலைபேசி மூலம் தொடர்பு கொள்ளலாம்.
+உங்கள் சந்தேகங்கள் மற்றும் ஆர்டர்களுக்கு எங்கள் குழு மகிழ்ச்சியுடன் உதவும்.
+</p><br>
+        <p>Email: info@skstore.com</p>
+        <p>Phone: +91 6385222106</p>
+        <p>Address: 123,Raja bather Street,KK nagar, Chennai, India</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 🛒 SK Grocery Store. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
