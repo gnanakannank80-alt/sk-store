@@ -51,7 +51,7 @@ header nav ul li a {
 /* HERO */
 .hero {
     height: 100vh;
-    background: url('') no-repeat center center/cover;
+    background: url('store.jpeg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -244,3 +244,4 @@ footer {
     }
 
 }
+
